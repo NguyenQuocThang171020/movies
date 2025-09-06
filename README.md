@@ -1,4 +1,7 @@
-#server
+# server backend
 
-run : mvn spring-boot:run
+start : mvn spring-boot:run
 
+# server frontend
+
+start : npm run dev
