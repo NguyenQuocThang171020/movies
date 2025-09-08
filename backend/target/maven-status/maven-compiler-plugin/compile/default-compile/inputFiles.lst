@@ -1,7 +1,7 @@
-E:\movies-app\backend\src\main\java\com\movies\model\Users.java
-E:\movies-app\backend\src\main\java\com\movies\controller\HomeController.java
-E:\movies-app\backend\src\main\java\com\movies\service\UserService.java
-E:\movies-app\backend\src\main\java\com\movies\controller\UserController.java
-E:\movies-app\backend\src\main\java\com\movies\repository\UserRepository.java
-E:\movies-app\backend\src\main\java\com\movies\config\SecurityConfig.java
-E:\movies-app\backend\src\main\java\com\movies\MySpringApplication.java
+F:\Project\movies\backend\src\main\java\com\movies\model\Users.java
+F:\Project\movies\backend\src\main\java\com\movies\MySpringApplication.java
+F:\Project\movies\backend\src\main\java\com\movies\config\SecurityConfig.java
+F:\Project\movies\backend\src\main\java\com\movies\controller\HomeController.java
+F:\Project\movies\backend\src\main\java\com\movies\service\UserService.java
+F:\Project\movies\backend\src\main\java\com\movies\controller\UserController.java
+F:\Project\movies\backend\src\main\java\com\movies\repository\UserRepository.java

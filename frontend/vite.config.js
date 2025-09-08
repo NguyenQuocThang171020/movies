@@ -5,10 +5,10 @@ export default defineConfig(({ mode }) => {
     return {
         server: {
             port: 3000,
-            open: '/index.html',
+            open: '/src/pages/home/home.html',
             proxy: {
                 '/movies': {
-                    target: env.VITE_API_BASE_URL,
+                    target: env.VITE_API_BACKEND_URL,
                     changeOrigin: true,
                 }
             }

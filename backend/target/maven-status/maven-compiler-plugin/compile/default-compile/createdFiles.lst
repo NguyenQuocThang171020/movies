@@ -4,4 +4,3 @@ com\movies\model\Users.class
 com\movies\repository\UserRepository.class
 com\movies\service\UserService.class
 com\movies\controller\HomeController.class
-com\movies\controller\UserController.class
