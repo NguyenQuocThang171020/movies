@@ -1,23 +1,24 @@
 import axios from 'axios';
-import User from '../../models/user/user.js';
 
 const handleLogin = async (event) => {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    const user = new User();
-    user.setUser({ name: username, password: password });
     const apiUrl = import.meta.env.VITE_API_BACKEND_URL;
     try {
-        const res = await axios.post(`${apiUrl}/movies/users/login`, user);
-        if (res.status === 200) {
-            window.location.href = '../home/home.html';
+        const res = await axios.post(`${apiUrl}/movies/users/login`, { name: username, password: password });
+        if (res.status != 200) {
+            document.getElementById('message').innerText = res.data;
         } else {
-            alert('Login failed. Please check your credentials and try again.');
+            window.location.href = '../home/home.html';
         }
     } catch (error) {
-        alert('An error occurred during login. Please try again later.');
+        document.getElementById('message').innerText =  error.response.data;
     }
 }
-
 document.getElementById('login-form').addEventListener('submit', handleLogin);
+
+// nagative REGISTER button
+document.getElementById('register').addEventListener('click', () => {
+    window.location.href = '../register/register.html';
+});
